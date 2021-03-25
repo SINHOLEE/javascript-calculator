@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="./index.js"></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="calculator__screen">
+				<span class="current-operator"></span>
+				<span class="result"></span>
+			</div>
+			<div class="calculator__body">
+				<section class="keys-container">
+					<div class="keys-container__header btn ac" data-btn-type="ac">AC</div>
+					<div class="keys-container__body">
+						<div class="btn" data-btn-type="1">1</div>
+						<div class="btn" data-btn-type="2">2</div>
+						<div class="btn" data-btn-type="3">3</div>
+						<div class="btn" data-btn-type="4">4</div>
+						<div class="btn" data-btn-type="5">5</div>
+						<div class="btn" data-btn-type="6">6</div>
+						<div class="btn" data-btn-type="7">7</div>
+						<div class="btn" data-btn-type="8">8</div>
+						<div class="btn" data-btn-type="9">9</div>
+					</div>
+					<div class="keys-container__footer btn" data-btn-type="0">0</div>
+				</section>
+				<aside class="operators">
+					<div class="operator btn divider" data-btn-type="/">/</div>
+					<div class="operator btn multiple" data-btn-type="*">X</div>
+					<div class="operator btn minus" data-btn-type="-">-</div>
+					<div class="operator btn plus" data-btn-type="+">+</div>
+					<div class="operator btn equal" data-btn-type="=">=</div>
+				</aside>
+			</div>
+		</div>
+	</body>
+</html>
