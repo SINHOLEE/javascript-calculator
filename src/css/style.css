@@ -11,7 +11,7 @@
 }
 
 .calculator__screen {
-	background-color: brown;
+	background-color: lightslategray;
 	display: flex;
 	justify-content: space-between;
 	height: 120px;
@@ -34,7 +34,7 @@
 	justify-content: center;
 }
 .btn {
-	background-color: aquamarine;
+	background-color: lightgray;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 100px;
@@ -52,6 +52,7 @@
 .keys-container__footer,
 .keys-container__header {
 	width: 100%;
+	background-color: darkgray;
 }
 
 .operator {
