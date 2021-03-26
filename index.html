@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calculator</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css" />
-    </head>
-    <body>
-        <div id="app">
-            <div class="calculator">
-                <h1 id="total">0</h1>
-                <div class="digits flex">
-                    <button class="digit">9</button>
-                    <button class="digit">8</button>
-                    <button class="digit">7</button>
-                    <button class="digit">6</button>
-                    <button class="digit">5</button>
-                    <button class="digit">4</button>
-                    <button class="digit">3</button>
-                    <button class="digit">2</button>
-                    <button class="digit">1</button>
-                    <button class="digit">0</button>
-                </div>
-                <div class="modifiers subgrid">
-                    <button class="modifier">AC</button>
-                </div>
-                <div class="operations subgrid">
-                    <button class="operation">/</button>
-                    <button class="operation">X</button>
-                    <button class="operation">-</button>
-                    <button class="operation">+</button>
-                    <button class="operation">=</button>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<script defer src="./src/js/index.js"></script>
+		<!-- <script defer src="https://unpkg.com/rainbow-elements@latest/dist/rainbow-elements.js"></script> -->
+
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="calculator__screen">
+				<span class="current-operator"></span>
+				<span class="result"></span>
+			</div>
+			<div class="calculator__body">
+				<section class="keys-container">
+					<div class="keys-container__header btn ac" data-btn-type="ac">AC</div>
+					<div class="keys-container__body">
+						<div class="btn" data-btn-type="1">1</div>
+						<div class="btn" data-btn-type="2">2</div>
+						<div class="btn" data-btn-type="3">3</div>
+						<div class="btn" data-btn-type="4">4</div>
+						<div class="btn" data-btn-type="5">5</div>
+						<div class="btn" data-btn-type="6">6</div>
+						<div class="btn" data-btn-type="7">7</div>
+						<div class="btn" data-btn-type="8">8</div>
+						<div class="btn" data-btn-type="9">9</div>
+					</div>
+					<div class="keys-container__footer btn" data-btn-type="0">0</div>
+				</section>
+				<aside
+					class="operators rainbow-elements"
+					data-type="background"
+					data-saturation="0.7"
+					data-lightness="0.6"
+					data-alpha="0.9"
+				>
+					<div class="operator btn divider" data-btn-type="/">/</div>
+					<div class="operator btn multiple" data-btn-type="*">X</div>
+					<div class="operator btn minus" data-btn-type="-">-</div>
+					<div class="operator btn plus" data-btn-type="+">+</div>
+					<div class="operator btn equal" data-btn-type="=">=</div>
+				</aside>
+			</div>
+		</div>
+		<script src="https://unpkg.com/rainbow-elements@0.1.2/dist/rainbow-elements.js "></script>
+		<script>
+			const {re} = window.RainbowElements;
+			re.run();
+		</script>
+	</body>
 </html>
